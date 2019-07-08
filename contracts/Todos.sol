@@ -8,7 +8,7 @@ contract Todos {
         todos.push(todo);
     }
 
-    function getTodos() constant public returns (bytes32[]) {
+    function getTodos() constant public returns (bytes32[] memory) {
         return todos;
     }
 }
