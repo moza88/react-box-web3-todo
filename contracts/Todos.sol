@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity ^0.5.8;
 
 contract Todos {
     bytes32[] todos;
@@ -8,7 +8,7 @@ contract Todos {
         todos.push(todo);
     }
 
-    function getTodos() constant public returns (bytes32[]) {
+    function getTodos() view public returns (bytes32[] memory) {
         return todos;
     }
 }
